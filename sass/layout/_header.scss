@@ -26,13 +26,7 @@
   display: flex;
   align-items: center;
 }
-.logo {
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--color-hf-logo);
-}
+
 .header-logo {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -88,4 +82,24 @@
   background-color: var(--color-hf-logo);
   left: 0;
   bottom: -32px;
+}
+.btn-primary {
+  font-weight: 700;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: var(--color-hf-logo);
+  color: var(--primary-white);
+  min-width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  padding: 10px 32px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #188ce8;
 }

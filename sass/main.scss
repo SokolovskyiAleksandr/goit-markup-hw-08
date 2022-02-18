@@ -1,8 +1,19 @@
-@import "./header";
-@import "./footer";
-@import "./hero";
-@import "./about";
-@import "./work";
-@import "./team";
-@import "./portfolio";
-@import "./modal";
+@import "./base/reset";
+@import "./base/common";
+
+@import "./utils/variables";
+@import "./utils/vars";
+@import "./utils/hidden";
+
+@import "./components/container";
+@import "./components/modal";
+@import "./components/btn";
+@import "./components/logo";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/portfolio";
