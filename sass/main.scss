@@ -2,13 +2,14 @@
 @import "./base/common";
 
 @import "./utils/variables";
-@import "./utils/vars";
+@import "./utils/current";
 @import "./utils/hidden";
 
 @import "./components/container";
 @import "./components/modal";
 @import "./components/btn";
 @import "./components/logo";
+@import "./components/current";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -17,3 +18,4 @@
 @import "./layout/work";
 @import "./layout/team";
 @import "./layout/portfolio";
+@import "./layout/clients";

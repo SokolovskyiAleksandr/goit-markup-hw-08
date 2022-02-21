@@ -70,19 +70,6 @@
   fill: currentColor;
   margin-right: 10px;
 }
-.current {
-  color: var(--color-hf-logo);
-  position: relative;
-}
-.current::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  background-color: var(--color-hf-logo);
-  left: 0;
-  bottom: -32px;
-}
 .btn-primary {
   font-weight: 700;
   line-height: 1.87;
