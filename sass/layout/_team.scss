@@ -1,10 +1,10 @@
-.list-team {
-  display: flex;
-}
 .team {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   background: #f5f4fa;
+}
+.team-list {
+  display: flex;
 }
 .team-name {
   font-size: 36px;
@@ -12,13 +12,13 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.link-name + .link-name {
-  margin-left: var(--element-margin);
-}
-.link-name {
+.team-link {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  & + & {
+    margin-left: var(--element-margin);
+  }
 }
 
 .name-job {
@@ -57,16 +57,18 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--color-hf-logo);
-  color: var(--primary-white);
+  &:hover,
+  &:focus {
+    background-color: var(--color-hf-logo);
+    color: var(--primary-white);
+  }
 }
 .team-social-icon {
   fill: currentColor;
 }
 
-.team-social-item + .team-social-item {
-  margin-left: 10px;
+.team-social-item {
+  & + & {
+    margin-left: 10px;
+  }
 }

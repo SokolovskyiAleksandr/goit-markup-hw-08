@@ -35,28 +35,20 @@
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   padding-left: 42px;
   outline: none;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-input:hover,
-.modal-input:focus {
-  border-color: var(--color-hf-logo);
-  cursor: pointer;
-}
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
-  fill: var(--color-hf-logo);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-input::placeholder {
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &:hover,
+  &:focus {
+    border-color: var(--color-hf-logo);
+    cursor: pointer;
+  }
+  &::placeholder {
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 .modal-wrap {
   position: relative;
@@ -66,6 +58,13 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  .modal-input:hover + &,
+  .modal-input:focus + & {
+    fill: var(--color-hf-logo);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .modal-check-text {
   line-height: 1.71;
@@ -73,6 +72,9 @@
   align-items: center;
   justify-content: center;
   color: var(--color-text);
+  &:hover {
+    cursor: pointer;
+  }
 }
 .checkbox-link {
   line-height: 1.71;
@@ -80,20 +82,16 @@
   align-items: center;
   color: var(--color-hf-logo);
   position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: var(--color-hf-logo);
+    left: 0;
+    bottom: 5px;
+  }
 }
-.checkbox-link::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  background-color: var(--color-hf-logo);
-  left: 0;
-  bottom: 5px;
-}
-.modal-check-text:hover {
-  cursor: pointer;
-}
-
 .modal-check-text span {
   width: 16px;
   height: 15px;
@@ -133,11 +131,11 @@
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-}
-.modal-button-submit:hover,
-.modal-button-submit:focus {
-  background: #188ce8;
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    cursor: pointer;
+  }
 }
 .modal-label {
   font-size: 12px;
@@ -146,9 +144,9 @@
   color: var(--color-text);
   display: block;
   margin-bottom: 4px;
-}
-.modal-label:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .modal-text {
   width: 100%;
@@ -163,15 +161,15 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-text::placeholder {
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-text:hover,
-.modal-text:focus {
-  border-color: var(--color-hf-logo);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    border-color: var(--color-hf-logo);
+    cursor: pointer;
+  }
+  &::placeholder {
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 .close-buttom {
   background-color: var(--primary-white);
@@ -182,18 +180,19 @@
   position: absolute;
   top: 8px;
   right: 8px;
+  &:hover {
+    cursor: pointer;
+  }
 }
-.close-buttom:hover {
-  cursor: pointer;
-}
+
 .close-icon {
   fill: #000000;
-}
-.close-buttom:hover .close-icon {
-  fill: var(--color-hf-logo);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .close-buttom:hover & {
+    fill: var(--color-hf-logo);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .is-hidden {
   opacity: 0;

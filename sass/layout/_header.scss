@@ -13,8 +13,10 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-item + .header-item {
-  margin-left: 50px;
+.header-item {
+  & + & {
+    margin-left: 50px;
+  }
 }
 .header-contakt {
   display: flex;
@@ -44,12 +46,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--color-hf-logo);
+  }
 }
-.header-link:hover,
-.header-link:focus {
-  color: var(--color-hf-logo);
-}
-
 .header-cont {
   display: flex;
   align-items: center;
@@ -61,10 +62,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-cont:hover,
-.header-cont:focus {
-  color: var(--color-hf-logo);
+  &:hover,
+  &:focus {
+    color: var(--color-hf-logo);
+  }
 }
 .header-icon {
   fill: currentColor;
@@ -85,8 +86,8 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
