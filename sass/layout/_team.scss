@@ -6,12 +6,12 @@
 .team-list {
   display: flex;
 }
-.team-name {
+.team__name {
   @include font(36px, null, 1.17, null);
   text-align: center;
   margin-bottom: 50px;
 }
-.team-link {
+.team-list__link {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -36,11 +36,11 @@
   color: var(--color-text);
   margin-bottom: 16px;
 }
-.team-social-list {
+.team-social {
   display: flex;
   justify-content: center;
 }
-.team-social-link {
+.team-social__link {
   @include align-list;
   @extend %social-link;
   background: none;
@@ -54,11 +54,11 @@
     color: var(--primary-white);
   }
 }
-.team-social-icon {
+.team-social__icon {
   fill: currentColor;
 }
 
-.team-social-item {
+.team-social__item {
   & + & {
     margin-left: 10px;
   }

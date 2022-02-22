@@ -5,13 +5,14 @@
   padding-top: var(--footer-paddingtb);
   padding-bottom: var(--footer-paddingtb);
 }
-.footer-contakt {
-  margin-top: 20px;
+.footer__logo {
+  display: flex;
+  margin-bottom: 20px;
 }
-.footer-adress {
+.footer-contakt__adress {
   margin-bottom: 9px;
 }
-.footer-list {
+.footer-contakt__list {
   .list & {
     font-family: inherit;
     font-style: normal;
@@ -31,7 +32,7 @@
 .footer span {
   color: var(--primary-white);
 }
-.footer-join {
+.footer-form__title {
   @include font(14px, 700, 1.14, 0.03em);
   font-style: normal;
   text-transform: uppercase;
@@ -43,10 +44,10 @@
   margin-left: 70px;
 }
 
-.footer-social-list {
+.footer-social {
   display: flex;
 }
-.footer-social-link {
+.footer-social__link {
   @include align-list;
   @extend %social-link;
   background: rgba(255, 255, 255, 0.1);
@@ -60,20 +61,20 @@
     color: var(--primary-white);
   }
 }
-.footer-social-icon {
+.footer-social__icon {
   fill: currentColor;
 }
 
-.footer-social-item {
+.footer-social__item {
   & + & {
     margin-left: 10px;
   }
 }
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-.submit-btn {
+.footer-form__btn {
   @include align-list;
   @include font(16px, 700, 1.87, 0.06em);
   width: 200px;
@@ -104,7 +105,7 @@
   margin-left: 10px;
 }
 
-.footer-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -132,7 +133,7 @@
     line-height: 1.25;
   }
 }
-.form-email {
+.footer-form__email {
   display: flex;
 }
 .footer-sub {

@@ -69,7 +69,7 @@
   fill: currentColor;
   margin-right: 10px;
 }
-.btn-primary {
+.hero__btn {
   @include align-list;
   @include font(null, 700, 1.87, 0.06em);
   background-color: var(--color-hf-logo);

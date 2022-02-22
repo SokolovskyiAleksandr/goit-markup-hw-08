@@ -1,8 +1,8 @@
-.clients-container {
+.clients__container {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
-.clients-name {
+.clients__name {
   text-align: center;
   @include font(36px, null, 1.16, null);
   color: var(--color-h);
@@ -12,7 +12,7 @@
   @include align-list;
   justify-content: center;
 }
-.clients-link {
+.clients-list__link {
   @include align-list;
   color: #afb1b8;
   width: 170px;
@@ -30,11 +30,11 @@
     border: 1px solid var(--color-hf-logo);
   }
 }
-.clients-item {
+.clients-list__item {
   & + & {
     margin-left: var(--element-margin);
   }
 }
-.clients-icon {
+.clients-list__icon {
   fill: currentColor;
 }
