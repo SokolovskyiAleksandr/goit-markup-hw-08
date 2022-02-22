@@ -61,12 +61,10 @@
   overflow: hidden;
 }
 .portfolio-top-text {
+  @include font(18px, 400, 1.56, null);
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 18px;
-  line-height: 1.56;
-  font-weight: 400;
   color: var(--primary-white);
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
@@ -77,16 +75,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, null, 2, 0.06em);
   margin-bottom: 4px;
   color: var(--color-h);
 }
 .portfolio-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(16px, 400, 1.87, null);
   color: var(--color-text);
 }
 .portfolio-des {

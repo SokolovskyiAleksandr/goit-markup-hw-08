@@ -21,9 +21,7 @@
   padding: 40px;
 }
 .modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 700, 1.15, null);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -67,9 +65,8 @@
   }
 }
 .modal-check-text {
+  @include align-list;
   line-height: 1.71;
-  display: flex;
-  align-items: center;
   justify-content: center;
   color: var(--color-text);
   &:hover {
@@ -77,9 +74,8 @@
   }
 }
 .checkbox-link {
+  @include align-list;
   line-height: 1.71;
-  display: flex;
-  align-items: center;
   color: var(--color-hf-logo);
   position: relative;
   &::after {
@@ -93,12 +89,11 @@
   }
 }
 .modal-check-text span {
+  @include align-list;
   width: 16px;
   height: 15px;
   border: 1px solid var(--color-h);
   border-radius: 1px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   margin-right: 8px;
 }
@@ -113,21 +108,17 @@
   fill: var(--primary-white);
 }
 .modal-button-submit {
+  @include align-list;
+  @include font(16px, 700, 1.87, 0.06em);
   width: 200px;
   height: 50px;
   background: var(--color-hf-logo);
   color: var(--primary-white);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -138,9 +129,7 @@
   }
 }
 .modal-label {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font(12px, null, 1.16, 0.01em);
   color: var(--color-text);
   display: block;
   margin-bottom: 4px;

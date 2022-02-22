@@ -7,8 +7,7 @@
   display: flex;
 }
 .team-name {
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, null, 1.17, null);
   text-align: center;
   margin-bottom: 50px;
 }
@@ -29,15 +28,11 @@
   border-radius: 0px 0px 4px 4px;
 }
 .team-man {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 500, 1.19, null);
   margin-bottom: 10px;
 }
 .team-job {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 400, 1.19, null);
   color: var(--color-text);
   margin-bottom: 16px;
 }
@@ -46,13 +41,9 @@
   justify-content: center;
 }
 .team-social-link {
-  width: 44px;
-  height: 44px;
+  @include align-list;
+  @extend %social-link;
   background: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #afb1b8;
   transition-property: color, background-color;
   transition-duration: 250ms;

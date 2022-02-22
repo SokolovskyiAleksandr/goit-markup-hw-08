@@ -32,11 +32,8 @@
   color: var(--primary-white);
 }
 .footer-join {
+  @include font(14px, 700, 1.14, 0.03em);
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white);
   margin-bottom: 20px;
@@ -50,13 +47,9 @@
   display: flex;
 }
 .footer-social-link {
-  width: 44px;
-  height: 44px;
+  @include align-list;
+  @extend %social-link;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--primary-white);
   transition-property: color, background-color;
   transition-duration: 250ms;
@@ -81,6 +74,8 @@
   align-items: baseline;
 }
 .submit-btn {
+  @include align-list;
+  @include font(16px, 700, 1.87, 0.06em);
   width: 200px;
   height: 50px;
   background: var(--color-hf-logo);
@@ -90,14 +85,8 @@
   padding-bottom: 10px;
   padding-left: auto;
   padding-right: auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   justify-content: center;
-  display: flex;
-  align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   border: none;
   color: var(--primary-white);
   margin-left: 12px;

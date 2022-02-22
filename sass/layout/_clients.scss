@@ -4,25 +4,22 @@
 }
 .clients-name {
   text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font(36px, null, 1.16, null);
   color: var(--color-h);
   margin-bottom: 50px;
 }
 .clients-list {
-  display: flex;
-  align-items: center;
+  @include align-list;
   justify-content: center;
 }
 .clients-link {
+  @include align-list;
   color: #afb1b8;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition-property: color, border;
   transition-duration: 250ms;
