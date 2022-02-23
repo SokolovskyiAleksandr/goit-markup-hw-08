@@ -20,12 +20,12 @@
   transition: transform 250ms;
   padding: 40px;
 }
-.modal-title {
+.modal__title {
   @include font(20px, 700, 1.15, null);
   text-align: center;
   margin-bottom: 30px;
 }
-.form-field {
+.modal-form__field {
   margin-bottom: 10px;
 }
 .modal-input {
@@ -48,10 +48,10 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
-.modal-wrap {
+.modal-form__wrap {
   position: relative;
 }
-.modal-icon {
+.modal-form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -64,7 +64,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.modal-check-text {
+.modal-form__check-text {
   @include align-list;
   line-height: 1.71;
   justify-content: center;
@@ -73,7 +73,7 @@
     cursor: pointer;
   }
 }
-.checkbox-link {
+.checkbox-link__checkbox-link {
   @include align-list;
   line-height: 1.71;
   color: var(--color-hf-logo);
@@ -88,7 +88,7 @@
     bottom: 5px;
   }
 }
-.modal-check-text span {
+.modal-form__check-text span {
   @include align-list;
   width: 16px;
   height: 15px;
@@ -97,17 +97,17 @@
   justify-content: center;
   margin-right: 8px;
 }
-.modal-check-icon {
+.modal-form__check-icon {
   fill: transparent;
 }
-.modal-check:checked + .modal-check-text > span {
+.modal-form__check:checked + .modal-form__check-text > span {
   background-color: var(--color-hf-logo);
   border: none;
 }
-.modal-check:checked + .modal-check-text svg {
+.modal-form__check:checked + .modal-form__check-text svg {
   fill: var(--primary-white);
 }
-.modal-button-submit {
+.modal-form__button-submit {
   @include align-list;
   @include font(16px, 700, 1.87, 0.06em);
   width: 200px;
@@ -128,7 +128,7 @@
     cursor: pointer;
   }
 }
-.modal-label {
+.modal-form__label {
   @include font(12px, null, 1.16, 0.01em);
   color: var(--color-text);
   display: block;
@@ -137,7 +137,7 @@
     cursor: pointer;
   }
 }
-.modal-text {
+.modal-form__text {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);

@@ -118,7 +118,7 @@ body {
   padding: 40px;
 }
 
-.modal-title {
+.modal__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -126,7 +126,7 @@ body {
   margin-bottom: 30px;
 }
 
-.form-field {
+.modal-form__field {
   margin-bottom: 10px;
 }
 
@@ -152,26 +152,26 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-wrap {
+.modal-form__wrap {
   position: relative;
 }
 
-.modal-icon {
+.modal-form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
+.modal-input:hover + .modal-form__icon,
+.modal-input:focus + .modal-form__icon {
   fill: var(--color-hf-logo);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check-text {
+.modal-form__check-text {
   display: flex;
   align-items: center;
   line-height: 1.71;
@@ -179,11 +179,11 @@ body {
   color: var(--color-text);
 }
 
-.modal-check-text:hover {
+.modal-form__check-text:hover {
   cursor: pointer;
 }
 
-.checkbox-link {
+.checkbox-link__checkbox-link {
   display: flex;
   align-items: center;
   line-height: 1.71;
@@ -191,7 +191,7 @@ body {
   position: relative;
 }
 
-.checkbox-link::after {
+.checkbox-link__checkbox-link::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -201,7 +201,7 @@ body {
   bottom: 5px;
 }
 
-.modal-check-text span {
+.modal-form__check-text span {
   display: flex;
   align-items: center;
   width: 16px;
@@ -212,20 +212,20 @@ body {
   margin-right: 8px;
 }
 
-.modal-check-icon {
+.modal-form__check-icon {
   fill: transparent;
 }
 
-.modal-check:checked + .modal-check-text > span {
+.modal-form__check:checked + .modal-form__check-text > span {
   background-color: var(--color-hf-logo);
   border: none;
 }
 
-.modal-check:checked + .modal-check-text svg {
+.modal-form__check:checked + .modal-form__check-text svg {
   fill: var(--primary-white);
 }
 
-.modal-button-submit {
+.modal-form__button-submit {
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -246,12 +246,12 @@ body {
   margin-right: auto;
 }
 
-.modal-button-submit:hover, .modal-button-submit:focus {
+.modal-form__button-submit:hover, .modal-form__button-submit:focus {
   background: #188ce8;
   cursor: pointer;
 }
 
-.modal-label {
+.modal-form__label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -260,11 +260,11 @@ body {
   margin-bottom: 4px;
 }
 
-.modal-label:hover {
+.modal-form__label:hover {
   cursor: pointer;
 }
 
-.modal-text {
+.modal-form__text {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -279,12 +279,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text:hover, .modal-text:focus {
+.modal-form__text:hover, .modal-form__text:focus {
   border-color: var(--color-hf-logo);
   cursor: pointer;
 }
 
-.modal-text::placeholder {
+.modal-form__text::placeholder {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -795,13 +795,13 @@ body {
   padding-bottom: var(--section-padding);
 }
 
-.list-btn {
+.portfolio-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.button-list + .button-list {
+.portfolio-btn__list + .portfolio-btn__list {
   margin-left: 8px;
 }
 
@@ -833,7 +833,7 @@ body {
   flex-wrap: wrap;
 }
 
-.portfolio-link {
+.portfolio-list__link {
   display: block;
   flex-basis: calc(100% / 3 - var(--element-margin));
   margin-left: var(--element-margin);
@@ -844,21 +844,21 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover, .portfolio-link:focus {
+.portfolio-list__link:hover, .portfolio-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:focus,
-.portfolio-link:hover .portfolio-top-text {
+.portfolio-list__link:focus,
+.portfolio-list__link:hover .portfolio-list__top-text {
   transform: translateY(0);
 }
 
-.portfolio-wrap {
+.portfolio-list__wrap {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-top-text {
+.portfolio-list__top-text {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.56;
@@ -875,7 +875,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-title {
+.portfolio-list__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -883,14 +883,14 @@ body {
   color: var(--color-h);
 }
 
-.portfolio-text {
+.portfolio-list__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
   color: var(--color-text);
 }
 
-.portfolio-des {
+.portfolio-list__des {
   padding: 20px 24px;
   border-top: none;
   border-bottom: 1px solid #eeeeee;
