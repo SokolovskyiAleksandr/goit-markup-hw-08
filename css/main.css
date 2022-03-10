@@ -16,6 +16,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -90,9 +91,28 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -646,18 +666,40 @@ body {
 }
 
 .about-list__link {
-  width: 270px;
+  margin-bottom: 30px;
   height: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .about-list__link {
+    margin-left: 30px;
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list__link {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
 .about-list {
-  display: flex;
+  margin-bottom: -30px;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .about-list__title {
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .about-list__text {
@@ -719,24 +761,50 @@ body {
   background: #f5f4fa;
 }
 
-.team-list {
-  display: flex;
+.team__name {
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.team__name {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .team__name {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.team-list {
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .team-list__link {
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list__link + .team-list__link {
-  margin-left: var(--element-margin);
+@media screen and (min-width: 768px) {
+  .team-list__link {
+    margin-left: 30px;
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__link {
+    width: calc(100% / 4 - 30px);
+  }
 }
 
 .name-job {
