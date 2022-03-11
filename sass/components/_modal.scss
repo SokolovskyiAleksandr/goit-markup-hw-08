@@ -7,7 +7,9 @@
   transition: opacity 250ms, visibility 250ms;
 }
 .modal {
-  width: 528px;
+  // width: 528px;
+  width: 100%;
+  // max-width: 528px;
   min-height: 581px;
   background-color: var(--primary-white);
   border-radius: 4px;
@@ -19,9 +21,18 @@
   transform: translate(-50%, -50%) rotate(0) scale(1);
   transition: transform 250ms;
   padding: 40px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 .modal__title {
   @include font(20px, 700, 1.15, null);
+  @media screen and (min-width: 1200px) {
+    @include font(20px, 700, 1.5, null);
+  }
   text-align: center;
   margin-bottom: 30px;
 }
@@ -66,7 +77,12 @@
 }
 .modal-form__check-text {
   @include align-list;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   justify-content: center;
   color: var(--color-text);
   &:hover {
