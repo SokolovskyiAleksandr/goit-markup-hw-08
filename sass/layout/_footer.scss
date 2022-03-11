@@ -63,8 +63,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
   @include tab {
     margin-left: 165px;
+    margin-bottom: 0;
   }
   @include desk {
     margin-left: 70px;
@@ -101,7 +103,7 @@
 .footer__container {
   // display: flex;
   align-items: baseline;
-  display: block;
+  // display: block;
   @include desk {
     display: flex;
   }
@@ -205,9 +207,17 @@
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    align-items: baseline;
   }
   @include desk {
+    display: flex;
     justify-content: start;
+    margin-bottom: 0;
+  }
+}
+.footer-add {
+  margin-bottom: 60px;
+  @include tab {
     margin-bottom: 0;
   }
 }
