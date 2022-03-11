@@ -102,13 +102,25 @@
             <div class="container">
             <h2 class="work__name">Чем мы занимаемся</h2>
             <ul class="list work-list">
-                <li class="work-list__img"><div class="work-list__wrap"><img src="./images/computer.jpg" alt="работа за компом" width="370" height="294">
+                <li class="work-list__img"><div class="work-list__wrap"><img
+                    srcset="./images/computer.jpg 1x,
+                    ./images/computer-2x.jpg 2x"
+                src="./images/computer.jpg" 
+                alt="работа за компом" width="370" height="294">
                 <p class="work-list__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p></div>
                 </li>
-                <li class="work-list__img"><div class="work-list__wrap"><img src="./images/phone.jpg" alt="Работа через телефон" width="370" height="294">
+                <li class="work-list__img"><div class="work-list__wrap"><img 
+                    srcset="./images/phone.jpg 1x, 
+                    ./images/phone-2x.jpg 2x"
+                    src="./images/phone.jpg"
+                    alt="Работа через телефон" width="370" height="294">
                 <p class="work-list__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p></div>
                 </li>
-                <li class="work-list__img"><div class="work-list__wrap"><img src="./images/laptop.jpg" alt="работа на планшете" width="370" height="294">
+                <li class="work-list__img"><div class="work-list__wrap"><img 
+                    srcset="./images/laptop.jpg 1x, 
+                    ./images/laptop-2x.jpg 2x"
+                    src="./images/laptop.jpg" 
+                    alt="работа на планшете" width="370" height="294">
                 <p class="work-list__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p></div>
                 </li>
             </ul>
@@ -118,7 +130,20 @@
             <div class="container">
             <h2 class="team__name">Наша команда</h2>
             <ul class="list team-list">
-                <li class="team-list__link"><img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                <li class="team-list__link">
+                    <picture>
+                        <source srcset="./images/igor.jpg 1x,
+                        ./images/igor-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+                        <source srcset="./images/igor-tab.jpg 1x,
+                        ./images/igor-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                        <source srcset="./images/igor-mob.jpg 1x,
+                        ./images/igor-mob-2x.jpg 2x" 
+                        media="(min-width: 480px)" />
+                        <img src="./images/igor.jpg" alt="Игорь Демьяненко"/>
+                    </picture>
                     <div class="name-job">
                         <h3 class="team-man">Игорь Демьяненко</h3>
                     <p class="team-job" lang="en">Product Designer</p>
@@ -154,7 +179,17 @@
                 </ul>
                 </div>
                 </li>
-                <li class="team-list__link"><img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260">
+                <li class="team-list__link">
+                    <picture>
+                        <source srcset="./images/olga.jpg 1x,
+                                            ./images/olga-2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                        <source srcset="./images/olga-tab.jpg 1x,
+                                            ./images/olga-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/olga-mob.jpg 1x,
+                                            ./images/olga-mob-2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/olga.jpg" alt="Ольга Репина"/>
+                    </picture>
                     <div class="name-job">
                         <h3 class="team-man">Ольга Репина</h3>
                     <p class="team-job" lang="en">Frontend Developer</p>
@@ -189,7 +224,19 @@
                     </li>
                 </ul></div>
                 </li>
-                <li class="team-list__link"><img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" height="260">
+                <li class="team-list__link">
+                    <picture>
+                        <source srcset="./images/nikolai.jpg 1x,
+                                            ./images/nikolai-2x.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                        <source srcset="./images/nikolai-tab.jpg 1x,
+                                            ./images/nikolai-tab-2x.jpg 2x"
+                                            media="(min-width: 768px)" />
+                        <source srcset="./images/nikolai-mob.jpg 1x,
+                                            ./images/nikolai-mob-2x.jpg 2x"
+                                            media="(min-width: 480px)" />
+                    <img src="./images/nikolai.jpg" alt="Николай Тарасов"/>
+                    </picture>
                     <div class="name-job">
                         <h3 class="team-man">Николай Тарасов</h3>
                     <p class="team-job" lang="en">Marketing</p>
@@ -224,7 +271,19 @@
                     </li>
                 </ul></div>
                 </li>
-                <li class="team-list__link"><img src="./images/mihail.jpg" alt="Михаил Ермаков" width="270" height="260">
+                <li class="team-list__link">
+                    <picture>
+                        <source srcset="./images/mihail.jpg 1x,
+                        ./images/mihail-2x.jpg 2x" 
+                        media="(min-width: 1200px)" />
+                        <source srcset="./images/mihail-tab.jpg 1x,
+                        ./images/mihail-tab-2x.jpg 2x" 
+                        media="(min-width: 768px)" />
+                        <source srcset="./images/mihail-mob.jpg 1x,
+                        ./images/mihail-mob-2x.jpg 2x" 
+                        media="(min-width: 480px)" />
+                    <img src="./images/mihail.jpg" alt="Михаил Ермаков"/>
+                    </picture>
                     <div class="name-job">
                         <h3 class="team-man">Михаил Ермаков</h3>
                     <p class="team-job" lang="en">UI Designer</p>
