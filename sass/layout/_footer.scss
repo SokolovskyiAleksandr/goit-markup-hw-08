@@ -59,7 +59,6 @@
 }
 .footer-link {
   color: var(--primary-white);
-  // margin-left: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +72,6 @@
     align-items: start;
   }
 }
-
 .footer-social {
   display: flex;
 }
@@ -94,16 +92,13 @@
 .footer-social__icon {
   fill: currentColor;
 }
-
 .footer-social__item {
   & + & {
     margin-left: 10px;
   }
 }
 .footer__container {
-  // display: flex;
   align-items: baseline;
-  // display: block;
   @include desk {
     display: flex;
   }
@@ -124,7 +119,6 @@
   text-align: center;
   border: none;
   color: var(--primary-white);
-  // margin-left: 12px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -143,8 +137,6 @@
 }
 
 .footer-form__input {
-  // width: 358px;
-  // max-width: 450px;
   width: 100%;
   margin-bottom: 20px;
   @include tel {

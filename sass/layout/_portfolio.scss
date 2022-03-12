@@ -21,9 +21,6 @@
 .portfolio-btn__list {
   margin-left: 8px;
 }
-// .portfolio-btn__list + .portfolio-btn__list {
-//   margin-left: 8px;
-// }
 .btn-secondary {
   font-weight: 500;
   line-height: 1.62;
@@ -46,9 +43,6 @@
   }
 }
 .portfolio-list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: -30px;
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -58,14 +52,12 @@
 }
 .portfolio-list__link {
   display: block;
-  // flex-basis: calc(100% / 3 - var(--element-margin));
-  // margin-left: var(--element-margin);
   margin-bottom: var(--element-margin);
-  @media screen and (min-width: 768px) {
+  @include tab {
     margin-left: 30px;
     width: calc(100% / 2 - 30px);
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: calc(100% / 3 - 30px);
   }
   box-shadow: none;

@@ -8,7 +8,6 @@
   @include align-list;
 }
 .header-nav {
-  // display: flex;
   display: none;
   @include tab {
     display: flex;
@@ -35,7 +34,6 @@
   }
 }
 .header-contakt {
-  // display: flex;
   display: none;
   @include tab {
     display: block;
@@ -45,8 +43,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  // padding-top: 32px;
-  // padding-bottom: 32px;
   padding-top: 21px;
   padding-bottom: 21px;
 }
@@ -56,7 +52,6 @@
 .navigation {
   @include align-list;
 }
-
 .header-logo {
   padding-top: 24px;
   padding-bottom: 25px;
