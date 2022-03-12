@@ -68,6 +68,10 @@ body {
   color: var(--color-hf-logo);
 }
 
+.mob-menu-nav__link.current-mob {
+  color: var(--color-hf-logo);
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -415,23 +419,52 @@ body {
 }
 
 .header-nav {
-  display: flex;
+  display: none;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
 }
 
 .header-nav__item + .header-nav__item {
   margin-left: 50px;
 }
 
-.header-contakt__item + .header-contakt__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .header-contakt__item + .header-contakt__item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contakt__item + .header-contakt__item {
+    margin-left: 50px;
+    margin-top: 0;
+  }
 }
 
 .header-contakt {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: none;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contakt {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contakt {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .list.header-contakt {
@@ -509,6 +542,158 @@ body {
 
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
+}
+
+.menu-open-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  background: none;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.menu-open-btn:hover, .menu-open-btn:focus {
+  cursor: pointer;
+  color: var(--color-hf-logo);
+}
+
+.open-icon {
+  fill: currentColor;
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: var(--primary-white);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 21px;
+  padding-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mob-menu .container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding-left: 40px;
+  padding-top: 21px;
+  padding-bottom: 48px;
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: 21px;
+  background: none;
+  border: none;
+}
+
+.menu-close-btn:hover, .menu-close-btn:focus {
+  cursor: pointer;
+  color: var(--color-hf-logo);
+}
+
+.menu-close {
+  fill: currentColor;
+}
+
+.mob-menu-nav__link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--color-h);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-nav__link:hover, .mob-menu-nav__link:focus {
+  color: var(--color-hf-logo);
+}
+
+.mob-menu-contakt {
+  margin-bottom: 64px;
+}
+
+.mob-menu-contakt__tel {
+  display: flex;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--color-hf-logo);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-contakt__tel:hover, .mob-menu-contakt__tel:focus {
+  color: var(--color-hf-logo);
+}
+
+.mob-menu-contakt__email {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-contakt__email:hover, .mob-menu-contakt__email:focus {
+  color: var(--color-hf-logo);
+}
+
+.mob-menu-contakt__item + .mob-menu-contakt__item {
+  margin-top: 32px;
+}
+
+.mob-soc {
+  display: flex;
+}
+
+.mob-soc-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--color-hf-logo);
+}
+
+.mob-soc-list + .mob-soc-list {
+  margin-left: 20px;
+}
+
+.mob-menu-nav__item + .mob-menu-nav__item {
+  margin-top: 32px;
 }
 
 .footer {
