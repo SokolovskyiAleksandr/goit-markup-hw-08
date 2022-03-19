@@ -1,12 +1,19 @@
 .header {
   border-bottom: 1px solid #ececec;
+  height: 60px;
   @include tab {
+    height: 80px;
+  }
 }
 .header .container {
   display: flex;
 }
 .header__container {
   @include align-list;
+  height: 60px;
+  @include tab {
+    height: 80px;
+  }
 }
 .header-nav {
   display: none;
@@ -143,6 +150,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  transition: opacity 250ms, visibility 250ms;
 }
 .mob-menu .container {
   position: absolute;
