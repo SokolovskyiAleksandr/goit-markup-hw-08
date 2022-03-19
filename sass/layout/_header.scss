@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid #ececec;
+  @include tab {
 }
 .header .container {
   display: flex;

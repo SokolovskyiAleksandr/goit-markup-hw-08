@@ -24,9 +24,13 @@
   }
 }
 .about-list__title {
+  font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+  @include tab {
+    text-align: left;
+  }
 }
 .about-list__text {
   font-weight: 400;
